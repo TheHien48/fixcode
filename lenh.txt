@@ -1,0 +1,3 @@
+mkdir -p models/trt
+/usr/src/tensorrt/bin/trtexec --onnx=models/gesture_classifier.onnx --saveEngine=models/trt/gesture_classifier.engine --fp16
+/usr/src/tensorrt/bin/trtexec --onnx=models/seq_model.onnx --saveEngine=models/trt/seq_model.engine --fp16
